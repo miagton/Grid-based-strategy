@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5717581749608640935
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5717581749608640922}
+  - component: {fileID: 5717581749608640933}
+  - component: {fileID: 5717581749608640923}
+  - component: {fileID: 5717581749608640920}
+  - component: {fileID: 1907978343}
+  - component: {fileID: 1907978344}
+  m_Layer: 0
+  m_Name: Managers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5717581749608640922
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5717581749608640935}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5717581749608640933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5717581749608640935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3e528ac7edf4aa42bafad97eebdf5f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xLength: 10
+  zLength: 10
+  tilePRefab: {fileID: 7198598651128565273, guid: e6b67e1dd57cb4d4b894b374fb52c6b0,
+    type: 3}
+  buildSystem: {fileID: 5717581749608640923}
+--- !u!114 &5717581749608640923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5717581749608640935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a5fc66867723f40828711b28c084c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 4322981771979556899, guid: 891acebfdd5f55b4fab328bbb45ee35e, type: 3}
+  layer:
+    serializedVersion: 2
+    m_Bits: 311
+  selector: {fileID: 5717581749608640920}
+  rayCastScript: {fileID: 1907978343}
+  buildPanel: {fileID: 0}
+--- !u!114 &5717581749608640920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5717581749608640935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f4564ddd8baee44f938afa2579fdee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildPanel: {fileID: 0}
+  buildSystem: {fileID: 5717581749608640923}
+--- !u!114 &1907978343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5717581749608640935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66482c7958b6e31449fd5993261feea5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactDIstance: 100
+  cam: {fileID: 4322981771979556899, guid: 891acebfdd5f55b4fab328bbb45ee35e, type: 3}
+  upgradeManager: {fileID: 1907978344}
+--- !u!114 &1907978344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5717581749608640935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 314609b1e28d3c34ea3dec9b5fe0526a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildSystem: {fileID: 5717581749608640923}
+  panel: {fileID: 0}
+  nameText: {fileID: 0}
+  lvlText: {fileID: 0}
+  descriptionText: {fileID: 0}
+  costText: {fileID: 0}
+  upgradeCostText: {fileID: 0}
+  produceTimeText: {fileID: 0}
+  produceAmountText: {fileID: 0}
